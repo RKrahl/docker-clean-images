@@ -8,6 +8,7 @@ sdist:
 	cp -p README.rst src/* dist/$(DISTNAME)
 	tar -C dist -c -f dist/$(DISTNAME).tar.gz -z $(DISTNAME)
 	rm -rf dist/$(DISTNAME)
+	sed -e 's/@VERSION@/$(VERSION)/' < $(NAME).spec > dist/$(NAME).spec
 
 distclean:
 	rm -rf dist
