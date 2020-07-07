@@ -1,0 +1,8 @@
+[Unit]
+Description=Clean dangling docker images
+Requisite=docker.service
+After=docker.service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash -c "docker rmi $(docker images -f "dangling=true" -q); exit 0"

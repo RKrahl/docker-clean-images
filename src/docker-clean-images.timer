@@ -1,0 +1,11 @@
+[Unit]
+Description=Run docker-clean-images four times daily
+PartOf=docker.service
+
+[Timer]
+OnCalendar=04/6:30
+AccuracySec=30min
+Persistent=true
+
+[Install]
+WantedBy=docker.service
