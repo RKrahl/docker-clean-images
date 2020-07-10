@@ -8,6 +8,7 @@ Source:         %{name}-%{version}.tar.gz
 BuildArch:      noarch
 BuildRequires:  systemd-rpm-macros
 Requires:       docker
+Requires:       findutils
 Requires:       systemd
 %systemd_requires
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
