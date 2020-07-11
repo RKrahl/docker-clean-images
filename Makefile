@@ -12,3 +12,6 @@ sdist:
 
 distclean:
 	rm -rf dist
+
+
+.PHONY: sdist distclean
