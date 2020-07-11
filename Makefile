@@ -1,5 +1,5 @@
 NAME     = docker-clean-images
-VERSION  = $(shell git describe --always --dirty)
+VERSION  = $(shell python3 -c 'import setuptools_scm; print(setuptools_scm.get_version())')
 DISTNAME = $(NAME)-$(VERSION)
 
 sdist:
