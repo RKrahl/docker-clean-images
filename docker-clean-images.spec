@@ -38,6 +38,8 @@ cp -p %{name}.service %{name}.timer %{buildroot}%{_unitdir}
 
 %files
 %defattr(-,root,root)
+%doc README.rst
+%license LICENSE
 %{_unitdir}/*
 
 %changelog
