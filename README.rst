@@ -1,4 +1,4 @@
-A systemd servive to clean dangling docker images
+A systemd service to clean dangling docker images
 =================================================
 
 This package provides a `systemd`_ service to clean dangling `docker`_

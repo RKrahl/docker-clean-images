@@ -1,7 +1,7 @@
 Name:           docker-clean-images
 Version:        @VERSION@
 Release:        1
-Summary:        systemd servive to clean dangling docker images
+Summary:        systemd service to clean dangling docker images
 License:        MIT
 Group:          System/Management
 Url:            https://github.com/RKrahl/docker-clean-images
