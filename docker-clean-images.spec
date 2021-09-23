@@ -8,8 +8,7 @@ Url:            https://github.com/RKrahl/docker-clean-images
 Source:         %{name}-%{version}.tar.gz
 BuildArch:      noarch
 BuildRequires:  systemd-rpm-macros
-Requires:       docker
-Requires:       findutils
+Requires:       docker >= 1.13
 Requires:       systemd
 %systemd_requires
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
